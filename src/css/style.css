@@ -13,7 +13,6 @@ body, html {
   min-width: 320px;
   background-image: url('/images/bg.jpg');
   @apply bg-no-repeat bg-cover bg-center min-h-screen;
-  min-height: -webkit-fill-available;
 }
 
 .opacity-01 {opacity: .1;}
