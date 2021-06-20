@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 /* SEO */
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import Section from '../components/section';
 
-import Icon from '../images/posiot.png';
-
-export default () => {
+const IndexPage = () => {
   return (
     <Fragment>
       <SEO />
@@ -15,7 +14,7 @@ export default () => {
         <Section>
           <div className = 'w-full h-full sm:p-0 md:p-10 xl:p-24'>
             <div className = 'text-center text-white w-full md:mx-auto md:w-2/3 lg:w-1/2'>
-              <img alt = 'Logo' src = { Icon } className = 'w-20 mx-auto'></img>
+              <StaticImage alt = 'Logo' src = '../images/posiot.png' className = 'w-20 mx-auto' />
               <h1 className = 'text-6xl font-bold mt-8' style = { { lineHeight: '4rem' } }>POSIOT</h1>
               <h2 className = 'text-lg font-bold mb-8'>Next Generation Audio</h2>
               <h3 className = 'text-sm font-bold italic'>by metin celik</h3>
@@ -33,3 +32,5 @@ export default () => {
     </Fragment>
   );
 };
+
+export default IndexPage;

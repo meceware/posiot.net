@@ -5,6 +5,10 @@ module.exports = {
     siteUrl: 'https://www.posiot.net/',
     author: 'metincelik',
   },
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,8 +17,9 @@ module.exports = {
         path: `${ __dirname }/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-sourcemaps',
@@ -61,17 +66,10 @@ module.exports = {
       resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [
-          require( 'tailwindcss' )( './tailwind.config.js' ),
+          require( 'tailwindcss' ),
           require( 'autoprefixer' ),
           require( 'cssnano' ),
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        tailwind: true,
-        purgeOnly: [ 'src/css/style.css' ],
       },
     },
   ],

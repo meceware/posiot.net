@@ -1,24 +1,9 @@
-/*! purgecss start ignore */
 @tailwind base;
-
-body, html {
-  @apply bg-indigo-100;
-}
-
 @tailwind components;
-/*! purgecss end ignore */
 @tailwind utilities;
 
 #site {
   min-width: 320px;
   background-image: url('/images/bg.jpg');
   @apply bg-no-repeat bg-cover bg-center min-h-screen;
-}
-
-.opacity-01 {opacity: .1;}
-
-/* Additional vertical padding used by kbd tag. */
-.py-05 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
 }

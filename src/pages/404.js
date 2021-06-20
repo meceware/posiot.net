@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import Section from '../components/section';
 import Link from '../components/link';
 
-export default () => {
+const Page404 = () => {
   return (
     <Fragment>
       <SEO />
@@ -36,3 +36,5 @@ export default () => {
     </Fragment>
   );
 };
+
+export default Page404;
