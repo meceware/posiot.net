@@ -43,15 +43,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-ackee-tracker",
-      options: {
-        domainId: '310735aa-a7be-48cf-8f93-07379522d7bb',
-        server: 'https://analytics.wapy.dev',
-        ignoreLocalhost: true,
-        detailed: false,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-advanced-sitemap',
       options: {
         exclude: [

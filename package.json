@@ -31,7 +31,6 @@
   ],
   "dependencies": {
     "gatsby": "^3.7.2",
-    "gatsby-plugin-ackee-tracker": "^3.0.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-canonical-urls": "^3.7.1",
     "gatsby-plugin-image": "^1.7.1",
